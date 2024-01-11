@@ -5,8 +5,8 @@
 <slot />
 
 
-<!-- <style lang="postcss">
+<style lang="postcss">
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
-</style> -->
+</style>
