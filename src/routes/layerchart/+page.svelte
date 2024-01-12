@@ -28,6 +28,11 @@
     oranges: 'var(--color-green-500)', };
 
 
+    // const fruitColors = {
+    //     apples: 'gold',
+    //     bananas: 'indigo',
+    //     oranges: 'green',
+    // };
 
 
 </script>
@@ -143,12 +148,12 @@
     >
       <Svg>
         <LinearGradient
-          class="from-accent-500/50 to-accent-500/0"
+          class="from-chart-500/50 to-chart-500/0"
           vertical
           let:url
         >
           <Area
-            line={{ class: "stroke-2 stroke-accent-500 opacity-20" }}
+            line={{ class: "stroke-2 stroke-chart-500 opacity-20" }}
             fill={url}
           />
           <RectClipPath
@@ -158,12 +163,12 @@
             {height}
             spring
           >
-            <Area line={{ class: "stroke-2 stroke-accent-500" }} fill={url} />
+            <Area line={{ class: "stroke-2 stroke-chart-500" }} fill={url} />
           </RectClipPath>
         </LinearGradient>
         <Highlight
           points
-          lines={{ class: "stroke-accent-500 [stroke-dasharray:unset]" }}
+          lines={{ class: "stroke-chart-500 [stroke-dasharray:unset]" }}
         />
         <Axis placement="bottom" />
       </Svg>
@@ -172,7 +177,7 @@
         y={48}
         xOffset={4}
         variant="none"
-        class="text-sm font-semibold text-accent-700 leading-3"
+        class="text-sm font-semibold text-chart-700 leading-3"
         let:data
       >
         {format(data.value, "currency")}
@@ -193,7 +198,7 @@
         y={height + padding.top + 2}
         anchor="top"
         variant="none"
-        class="text-sm font-semibold bg-accent-500 text-white leading-3 px-2 py-1 rounded whitespace-nowrap"
+        class="text-sm font-semibold bg-chart-500 text-white leading-3 px-2 py-1 rounded whitespace-nowrap"
         let:data
       >
         {format(data.date, PeriodType.Day)}
