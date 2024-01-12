@@ -45,7 +45,8 @@ const config = {
 				// 	DEFAULT: "hsl(var(--accent) / <alpha-value>)",
 				// 	foreground: "hsl(var(--accent-foreground) / <alpha-value>)"
 				// },
-				accent: colors.indigo,
+				accent: colors.teal,
+				
 				popover: {
 					DEFAULT: "hsl(var(--popover) / <alpha-value>)",
 					foreground: "hsl(var(--popover-foreground) / <alpha-value>)"

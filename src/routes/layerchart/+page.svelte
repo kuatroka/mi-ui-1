@@ -22,24 +22,17 @@
     const multiSeriesFlatData = pivotLonger(multiSeriesData, keys, 'fruit', 'value');
 
     const dataByFruit = flatGroup(multiSeriesFlatData, (d: { fruit: string }) => d.fruit);
-    // const fruitColors = {
-    // apples: 'var(--color-blue-500)',
-    // bananas: 'var(--color-purple-500)',
-    // oranges: 'var(--color-green-500)', };
-
-
     const fruitColors = {
-        apples: 'gold',
-        bananas: 'indigo',
-        oranges: 'green',
-    };
+    apples: 'var(--color-blue-500)',
+    bananas: 'var(--color-purple-500)',
+    oranges: 'var(--color-green-500)', };
+
+
 
 
 </script>
 
-<h1>Examples</h1>
-
-<h2>Area</h2>
+<h1>Area - With Tooltip and Highlight</h1>
 
 <div class="h-[300px] p-4 border rounded">
 <Chart
@@ -131,7 +124,7 @@
 </div>
 
 
-<h1>Apple Stock</h1>
+<h1>Area - Clipped Area on Tooltip</h1>
 
 <div class="h-[300px] border rounded">
     <Chart
