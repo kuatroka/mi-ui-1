@@ -46,12 +46,14 @@ const config = {
 					foreground: "hsl(var(--accent-foreground) / <alpha-value>)"
 				},
 
-				// accent: colors.teal,
+				// chart: colors.teal,
+				// chart: 'goldenrod',
 
 				chart: {
-					DEFAULT: "hsl(var(--accent) / <alpha-value>)",
-					foreground: "hsl(var(--accent-foreground) / <alpha-value>)",
-					500: "hsl(var(--accent) / <alpha-value>)",
+					DEFAULT: "hsl(var(--chart) / <alpha-value>)",
+					foreground: "hsl(var(--chart-foreground) / <alpha-value>)",
+					500: "hsl(var(--chart) / <alpha-value>)",
+					700: "hsl(var(--chart) / <alpha-value>)",
 				},
 				
 				popover: {
