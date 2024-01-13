@@ -52,8 +52,6 @@ const config = {
 				chart: {
 					DEFAULT: "hsl(var(--chart) / <alpha-value>)",
 					foreground: "hsl(var(--chart-foreground) / <alpha-value>)",
-					500: "hsl(var(--chart) / <alpha-value>)",
-					700: "hsl(var(--chart) / <alpha-value>)",
 				},
 				
 				popover: {
@@ -71,7 +69,7 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: [...fontFamily.mono]
 			}
 		}
 	},

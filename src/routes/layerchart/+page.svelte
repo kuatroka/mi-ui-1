@@ -58,8 +58,8 @@
         rule
     />
     <Area
-        line={{ class: "stroke-2 stroke-chart-500" }}
-        class="fill-chart-500/30"
+        line={{ class: "stroke-2 stroke-chart" }}
+        class="fill-chart/30"
     />
     <Highlight points lines />
     </Svg>
@@ -148,7 +148,7 @@
     >
       <Svg>
         <LinearGradient
-          class="from-chart-500/50 to-chart-500/0"
+          class="from-chart/50 to-chart/0"
           vertical
           let:url
         >
@@ -177,7 +177,7 @@
         y={48}
         xOffset={4}
         variant="none"
-        class="text-sm font-semibold text-chart-700/100 leading-3"
+        class="text-sm font-semibold text-chart/100 leading-3"
         let:data
       >
         {format(data.value, "currency")}
