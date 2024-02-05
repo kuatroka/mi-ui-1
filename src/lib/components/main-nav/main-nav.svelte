@@ -40,9 +40,9 @@
 	</a>
 
 	<a
-	href="/playground"
+	href="/layerchart"
 	class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
 >
-	playground
+	layerchart
 </a>
 </nav>

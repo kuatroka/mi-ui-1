@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@evidence-dev/core-components": "^3.0.5",
 		"@sveltejs/adapter-node": "^3.0.0",
 		"@types/better-sqlite3": "^7.6.8",
 		"@types/d3-array": "^3.2.1",
@@ -51,6 +52,7 @@
 		"d3-shape": "^3.2.0",
 		"date-fns": "^3.2.0",
 		"debounce": "^2.0.0",
+		"echarts": "^5.4.3",
 		"formsnap": "^0.4.2",
 		"layerchart": "^0.27.1",
 		"lucide": "^0.309.0",
