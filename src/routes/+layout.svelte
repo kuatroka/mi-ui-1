@@ -3,6 +3,7 @@
 	import { MainNav } from "$lib/components/main-nav";
 	import { Search } from "$lib/components/main-nav";
 	import { UserNav } from "$lib/components/main-nav";
+	import ThemeToggle from '$lib/components/main-nav/theme-toggle.svelte';
 </script>
 
 <div class="relative flex min-h-screen flex-col" id="page">
@@ -12,6 +13,7 @@
 			<div class="ml-auto flex items-center space-x-4">
 				<Search />
 				<UserNav />
+				<ThemeToggle />
 			</div>
 		</div>
 	</div>

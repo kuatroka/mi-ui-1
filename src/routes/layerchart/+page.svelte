@@ -1,4 +1,5 @@
 <script lang="ts">
+  import * as Card from "$lib/components/ui/card";
     import {scaleOrdinal, scaleTime } from 'd3-scale';
     import { flatGroup } from 'd3-array';
     import { stack } from 'd3-shape';
@@ -36,6 +37,54 @@
 
 
 </script>
+<h2 class="text-3xl font-bold tracking-tight ml-4  my-4">DaisyUI - Timeline</h2>
+<Card.Content class="mt-2">
+  <ul class="timeline timeline-vertical [--timeline-col-start:2rem]">
+  <li>
+      <div class="timeline-start">1984</div>
+      <div class="timeline-end timeline-box">First Macintosh computer</div>
+      <div class="timeline-middle">
+      <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+      </div>
+      <hr/>
+  </li>
+  <li>
+      <hr/>
+      <div class="timeline-start">1998</div>
+      <div class="timeline-middle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+      </div>
+      <div class="timeline-end timeline-box">iMac</div>
+      <hr/>
+  </li>
+  <li>
+      <hr/>
+      <div class="timeline-start">2001</div>
+      <div class="timeline-middle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+      </div>
+      <div class="timeline-end timeline-box">iPod</div>
+      <hr/>
+  </li>
+  <li>
+      <hr/>
+      <div class="timeline-start">2007</div>
+      <div class="timeline-middle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+      </div>
+      <div class="timeline-end timeline-box">iPhone</div>
+      <hr/>
+  </li>
+  <li>
+      <hr/>
+      <div class="timeline-start">2015</div>
+      <div class="timeline-middle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+      </div>
+      <div class="timeline-end timeline-box">Apple Watch</div>
+  </li>
+  </ul>
+</Card.Content>
 
 <h1>Area - With Tooltip and Highlight</h1>
 
@@ -135,7 +184,7 @@
     <Chart
       data={appleStock}
       x="date"
-      xScale={scaleTime()}
+      xScale={scaleTime()}  
       y="value"
       yDomain={[0, null]}
       yNice
