@@ -4,7 +4,9 @@
     import { flatGroup } from 'd3-array';
     import { stack } from 'd3-shape';
     import { format as formatDate } from 'date-fns';
+    import {Separator } from '$lib/components/ui/separator'
     import { PeriodType, format } from 'svelte-ux';
+    import { ToggleGroup as ToggleGroupUX, ToggleOption, TogglePanel } from 'svelte-ux';
     import {Chart,  Svg, Axis, Area, Tooltip, TooltipItem, Highlight, Point, Text,
     LinearGradient, RectClipPath, AreaStack } from 'layerchart'
     import { createDateSeries } from '../../../node_modules/layerchart/dist/utils/genData';
@@ -35,8 +37,23 @@
     //     oranges: 'green',
     // };
 
-
+    let selectedStr = 'a';
 </script>
+<!-- <h2 class="text-3xl font-bold tracking-tight ml-4  my-4">Svelte-UX - Toggle Group</h2>
+<div class="inline-grid gap-2 p-2">
+  <ToggleGroupUX variant="fill" bind:value={selectedStr}>
+      <ToggleOption value="a">All</ToggleOption>
+      <ToggleOption value="b">Male</ToggleOption>
+      <ToggleOption value="c">Female</ToggleOption>
+      
+  </ToggleGroupUX>
+</div>
+<div>
+  Toggle value: {selectedStr}
+</div>
+<Separator />
+
+
 <h2 class="text-3xl font-bold tracking-tight ml-4  my-4">DaisyUI - Timeline</h2>
 <Card.Content class="mt-2">
   <ul class="timeline timeline-vertical [--timeline-col-start:2rem]">
@@ -84,7 +101,7 @@
       <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
   </ul>
-</Card.Content>
+</Card.Content> -->
 
 <h1>Area - With Tooltip and Highlight</h1>
 
