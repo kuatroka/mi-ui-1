@@ -267,13 +267,13 @@ let options3 = {
 								<Column id="value" title='Value' contentType=colorscale/>  
 							</DataTable> -->
 
-							<LineChart {chartAreaHeight}
+							<!-- <LineChart {chartAreaHeight}
 							data={get_overview_per_quarter}
 							x=quarter_end_date 
 							y=total_value_per_quarter_usd
 							yAxisTitle="Value($)"
 							sort=asc
-						/>
+						/> -->
 
 						<!-- <VisXYContainer height={500}>
 							<VisLine data={get_overview_per_quarter} x={d => d.year_as_string} y={d => d.total_value_per_quarter_usd}/>

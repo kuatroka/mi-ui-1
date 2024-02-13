@@ -10,7 +10,9 @@
 	import * as Card from "$lib/components/ui/card";
 	import * as Tabs from "$lib/components/ui/tabs";
 	import {Overview, RecentSales	} from ".";
-	import { DataTable, Column} from '@evidence-dev/core-components';
+	import DataTable from '../../../../node_modules/@evidence-dev/core-components/dist/unsorted/viz/table/DataTable.svelte';
+	import Column from '../../../../node_modules/@evidence-dev/core-components/dist/unsorted/viz/table/Column.svelte';
+	Column
 	export let data;
 	$: cusip = data.entries_cik
 </script>

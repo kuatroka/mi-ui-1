@@ -19,12 +19,7 @@
 	>
 		Dashboard
 	</a>
-	<a
-		href="/music"
-		class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-	>
-		Music
-	</a>
+
 	<a
 		href="/shadcn-datatable"
 		class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -42,7 +37,14 @@
 	<a
 	href="/layerchart"
 	class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
->
-	layerchart
-</a>
+	>
+		layerchart
+	</a>
+	<a
+	href="/plot"
+	class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+	>
+		Plot
+	</a>
+
 </nav>
